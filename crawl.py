@@ -195,7 +195,7 @@ class Crawling(object):
         for e in index[keyword]:
             if e in ranks:
                 dic[ranks[e]] = e
-        key = self._quicksort(dic.keys())
+        key = self._quicksort(list(dic.keys()))
         for i in key:
             res.append(dic[i])
         return res
@@ -203,7 +203,7 @@ class Crawling(object):
     def _quicksort(self, l):
         if len(l) <= 1:
             return l
-        pivot = l[len(l)/2]
+        pivot = l[int(len(l)/2)]
         smaller = []
         bigger = []
         equal = []
@@ -216,7 +216,7 @@ class Crawling(object):
                 bigger.append(e)
         return self._quicksort(bigger) + equal + self._quicksort(smaller)
     
-## comment
+## not use
 #    def remove_tags(self, string):
 #        start, end = 0, 0
 #        while True:
