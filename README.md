@@ -1,4 +1,5 @@
 # pagerank-mingle  
+It is in class [Intro to computer science](https://www.udacity.com/course/intro-to-computer-science--cs101) of Udacity. Almost similar but with some modifications.  
 
 
 ## Create a search engine
@@ -71,3 +72,12 @@ def ordered_search(self, index, ranks, keyword):
 
 ## How to use
 Use web.py
+```python
+mingrome = Crawling()
+index, graph = mingrome.crawl_web('http://udacity.com/cs101x/urank/index.html')
+ranks = mingrome.compute_ranks(graph, 0)
+
+# search 'for'
+print mingrome.ordered_search(index, ranks, 'for')
+```
+
