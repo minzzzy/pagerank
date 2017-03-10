@@ -29,10 +29,45 @@ def crawl_web(self, seed):
 - input : graph
 - output : ranks
 
+```python
+ def compute_ranks(self, graph, k):
+        d = 0.8
+        numloops = 2
+        ranks = {}
+        npages = len(graph)
+        for page in graph:
+            ranks[page] = 1.0 / npages
+        
+        for i in range(0, numloops):
+            newranks = {}
+            for page in graph:
+                newrank = (1 - d) / npages
+                for node in graph:
+                    if page in graph[node]:
+                        if not self._is_reciprocal_link(graph, node, page, k):
+                            newrank = newrank + d*ranks[node]/len(graph[node])
+                newranks[page] = newrank
+            ranks = newranks
+        return ranks
+```
+
 
 ### ordered_search
 - input : index, ranks, keyword
 - output : ordered_list
+
+```python
+def ordered_search(self, index, ranks, keyword):
+        dic = {}
+        res = []
+        for e in index[keyword]:
+            if e in ranks:
+                dic[ranks[e]] = e
+        key = self._quicksort(list(dic.keys()))
+        for i in key:
+            res.append(dic[i])
+        return res
+ ```
 
 ## How to use
 Use web.py
