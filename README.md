@@ -73,8 +73,8 @@ def ordered_search(self, index, ranks, keyword):
 ## How to use
 Use web.py
 ```python
-mingrome = Crawling()
-index, graph = mingrome.crawl_web('http://udacity.com/cs101x/urank/index.html')
+mingle = Crawling()
+index, graph = mingle.crawl_web('http://udacity.com/cs101x/urank/index.html')
 ranks = mingrome.compute_ranks(graph, 0)
 
 # search 'for'
