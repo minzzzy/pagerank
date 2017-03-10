@@ -5,6 +5,7 @@ class Crawling(object):
     def __init__(self):
         self.index = {}
         self.graph = {}
+        # Examples of website content
         self.cache = {
            'http://udacity.com/cs101x/urank/index.html': """<html>
                                                         <body>
