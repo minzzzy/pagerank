@@ -3,7 +3,7 @@ It is in class [Intro to computer science](https://www.udacity.com/course/intro-
 
 
 ## Create a search engine
-There are 3 steps in crawl.py
+There are 3 steps in search_engine.py
 
 ### crawl_web
 - input : url
@@ -71,7 +71,7 @@ def ordered_search(self, index, ranks, keyword):
  ```
 
 ## How to use
-Use web.py
+Use make_search_engine.py
 ```python
 mingle = Crawling()
 index, graph = mingle.crawl_web('http://udacity.com/cs101x/urank/index.html')
