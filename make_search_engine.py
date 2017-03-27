@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
-from crawl import Crawling
+from Search_engine import Search_engine
 import pprint
 
-mingrome = Crawling()
+mingrome = Search_engine()
 index, graph = mingrome.crawl_web('http://udacity.com/cs101x/urank/index.html')
 ranks = mingrome.compute_ranks(graph, 0)
 
