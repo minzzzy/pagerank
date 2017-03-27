@@ -1,6 +1,4 @@
-#!/usr/bin/python
-
-class Crawling(object):
+class Search_engine(object):
 
     def __init__(self):
         self.index = {}
