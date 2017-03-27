@@ -73,7 +73,7 @@ def ordered_search(self, index, ranks, keyword):
 ## How to use
 Use make_search_engine.py
 ```python
-mingle = Crawling()
+mingle = Search_engine()
 index, graph = mingle.crawl_web('http://udacity.com/cs101x/urank/index.html')
 ranks = mingrome.compute_ranks(graph, 0)
 
