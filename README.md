@@ -1,5 +1,6 @@
 # pagerank-mingle  
-It is in class [Intro to computer science](https://www.udacity.com/course/intro-to-computer-science--cs101) of Udacity. Almost similar but with some modifications.  
+It is in class, [Intro to computer science](https://www.udacity.com/course/intro-to-computer-science--cs101) of Udacity.  
+I made a simple web search engine based on the contents of the lecture.  
 
 
 ## Create a search engine
