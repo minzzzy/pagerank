@@ -72,13 +72,14 @@ def ordered_search(self, index, ranks, keyword):
  ```
 
 ## How to use
-Use make_search_engine.py
+Use make_search_engine.py  
+"mingle" is my search engine.
 ```python
 mingle = Search_engine()
 index, graph = mingle.crawl_web('http://udacity.com/cs101x/urank/index.html')
 ranks = mingle.compute_ranks(graph, 0)
 
 # search 'for'
-print mingrome.ordered_search(index, ranks, 'for')
+print mingle.ordered_search(index, ranks, 'for')
 ```
 
