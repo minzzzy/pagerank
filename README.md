@@ -1,7 +1,7 @@
 # pagerank-mingle  
 It is in class, [Intro to computer science](https://www.udacity.com/course/intro-to-computer-science--cs101) of Udacity.  
 I made a simple web search engine based on the contents of the lecture.  
-
+- python ver : 2.7
 
 ## Create a search engine
 There are 3 steps in search_engine.py
